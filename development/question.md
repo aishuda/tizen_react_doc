@@ -30,6 +30,7 @@ if (clientRect.x === undefined || clientRect.x === '') {
 #### 2、flex在老版本中UI问题
 - 由于react在编译过程会将flex的兼容写法过滤掉，所以我们在public中单独引用flex样式文件./public/css/flex.css（免去编译的步骤，保留原汁原味代码）
 - 在项目中的组件样式中，严谨使用flex样式，如果使用的话，将样式名字放到./public/flex.css中
+- 项目中严禁使用display: inline-flex;  老版本不兼容
 
 #### 3、老版本的js兼容问题，通过babel-polyfill来解决，具体解决方式如下
 ```javascript
